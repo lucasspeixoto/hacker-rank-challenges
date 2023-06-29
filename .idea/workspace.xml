@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b5efda6a-cb76-4796-8fcc-6bafffa8b700" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/challenges/MiniMaxSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/challenges/MiniMaxSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

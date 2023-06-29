@@ -27,40 +27,18 @@ public class MiniMaxSum {
 
         bufferedReader.close();
 
-        int maxArrValue = 0;
-        int minArrValue = 0;
-        int arrTotalSum = 0;
+        int maxArrValue = integerItems.get(0);
+        int minArrValue = integerItems.get(0);
+        long arrTotalSum = 0;
 
         for (Integer integer : integerItems) {
             arrTotalSum += integer;
 
-            if (integer > maxArrValue) {
-                maxArrValue = integer;
-            } else if (integer < minArrValue) {
-                minArrValue = integer;
-            }
+            if (integer >= maxArrValue) maxArrValue = integer;
+            if (integer <= minArrValue) minArrValue = integer;
         }
 
-        System.out.print(arrTotalSum - maxArrValue);
-        System.out.print(" ");
-        System.out.print(arrTotalSum - minArrValue);
-
-        /*
-
-        int maxArrValue = arr.stream().reduce(arr.get(0), Integer::max);
-
-        int minArrValue = arr.stream().reduce(arr.get(0), Integer::min);
-
-        int minSum = arr.stream().reduce(0, Integer::sum) - maxArrValue;
-
-        int maxSum = arr.stream().reduce(0, Integer::sum) - minArrValue;
-
-        System.out.print(minSum);
-        System.out.print("  ");
-        System.out.print(maxSum);
-
-
-         */
+        System.out.println((arrTotalSum - maxArrValue) + " " +  (arrTotalSum - minArrValue));
 
     }
 }
