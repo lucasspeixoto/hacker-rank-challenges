@@ -26,6 +26,8 @@ public class MiniMaxSum {
                         .map(Integer::parseInt)
                         .toList());
 
+        bufferedReader.close();
+
 
         Collections.sort(arr);
 
